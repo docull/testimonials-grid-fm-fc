@@ -1,3 +1,40 @@
+body {
+    background-color: hsl(210, 46%, 95%);
+}
+
+.grid-section {
+    display: grid;
+}
+
+#portrait {
+    border-radius: 100%;
+}
+
+.panel-1 {
+    border-radius: 10px;
+    background-color: hsl(263, 55%, 52%);
+}
+
+.panel-2 {
+    border-radius: 10px;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.panel-3 {
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.panel-4 {
+    border-radius: 10px;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.panel-5 {
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+}
+
 .attribution {
     font-size: 11px; text-align: center;
 }

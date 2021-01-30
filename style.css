@@ -1,38 +1,145 @@
 body {
     background-color: hsl(210, 46%, 95%);
+    font-family: "Barlow Semi Condensed";
+    font-size: 13px;
 }
 
 .grid-section {
+    width: 1000px;
+    height: 400px;
     display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
 }
 
 #portrait {
     border-radius: 100%;
 }
 
+.spacer5 {
+    height: 20px;
+}
+
+.top-section {
+    display: flex;
+}
+
+#portrait {
+    top: 50%;
+    margin: 20px;
+}
+
 .panel-1 {
     border-radius: 10px;
     background-color: hsl(263, 55%, 52%);
+    background-image: url("images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    color: hsl(0, 0%, 81%);
+    grid-column: 1 / 7;
+    grid-row: 1 / span 1;
+}
+
+.panel-1 .name-grad {
+    margin-top: 20px;
+}
+
+.panel-1 .name-grad span {
+    opacity: 50%;
+    font-size: .8rem;
+}
+
+.panel-1 .heading {
+    font-size: 1.3rem;
+}
+
+.panel-1 .text {
+    opacity: 70%;
 }
 
 .panel-2 {
     border-radius: 10px;
     background-color: hsl(217, 19%, 35%);
+    color:hsl(0, 0%, 81%);
+    grid-column: 7 / 10;
+    grid-row: 1 / span;
+}
+
+.panel-2 .position {
+    opacity: 50%;
+    font-size: .8rem;
+}
+
+.panel-2 .heading {
+    font-size: 1.3rem;
+}
+
+.panel-2 .text {
+    opacity: 70%;
 }
 
 .panel-3 {
     border-radius: 10px;
     background-color: hsl(0, 0%, 100%);
+    color:hsl(0, 0%, 81%);
+    grid-column: 1 / 4;
+    grid-row: 2 / span 1;
+}
+
+.panel-3 .position {
+    opacity: 50%;
+    font-size: .8rem;
+}
+
+.panel-3 .heading {
+    font-size: 1.3rem;
+}
+
+.panel-3 .text {
+    opacity: 70%;
 }
 
 .panel-4 {
     border-radius: 10px;
     background-color: hsl(219, 29%, 14%);
+    color:hsl(0, 0%, 81%);
+    grid-column: 4 / 10;
+    grid-row: 2 / span 1;
+}
+
+.panel-4 .position {
+    opacity: 50%;
+    font-size: .8rem;
+}
+
+.panel-4 .heading {
+    font-size: 1.3rem;
+}
+
+.panel-4 .text {
+    opacity: 70%;
 }
 
 .panel-5 {
     border-radius: 10px;
     background-color: hsl(0, 0%, 100%);
+    color:hsl(0, 0%, 81%);
+    grid-column: 10 / span 3;
+    grid-row: 1 / span 2;
+}
+
+.panel-5 .position {
+    opacity: 50%;
+    font-size: .8rem;
+}
+
+.panel-5 .heading {
+    font-size: 1.3rem;
+}
+
+.panel-5 .text {
+    opacity: 70%;
 }
 
 .attribution {

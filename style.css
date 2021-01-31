@@ -10,12 +10,13 @@ body {
 
 /* ------ Grid container based on 12 columns and two rows. ---- */
 .grid-section {
-    width: 1000px;
-    height: 400px;
+    width: 1000px; /* setting width prevents container from automatically taking up whole width of page */
+    margin: auto; /* this automatically centers the container horizontally */
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr); /* 12 cols each 1fr in width*/
     grid-template-rows: auto auto;
     gap: 20px;
+    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
 }
 
 /*  top section of each panel using felxbox to position 
@@ -34,9 +35,9 @@ and style photo and name/grad details  */
     background-color: hsl(263, 55%, 52%);
     background-image: url("images/bg-pattern-quotation.svg");
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: 80% 0%; /* 1st % is x axis, 2nd is y axix*/
     grid-column: 1 / 7; /* columns one up to and including six  */
-    grid-row: 1 / span 1;
+    grid-row: 1 / span 1; /* one row only */
 }
 
 /* portrait reduced in size with border and margin  */

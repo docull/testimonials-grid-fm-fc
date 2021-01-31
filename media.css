@@ -1,0 +1,32 @@
+@media (max-width:412px) {
+    .grid-section {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%; /* this allows the panels to take up the full single column width */
+        margin: auto;     
+    }
+
+    .grid-section .panel-1 {
+        grid-column: 1 / span 1;/*one column spanning one 412px and less*/
+        grid-row: 1 / span 1; /* row 1 of 5*/
+    }
+
+    .grid-section .panel-2 {
+        grid-column: 1 / span 1;/*one column spanning one 412px and less*/
+        grid-row: 2 / span 1; /* row 2 of 5*/
+    }
+
+    .grid-section .panel-3 {
+        grid-column: 1 / span 1;/*one column spanning one 412px and less*/
+        grid-row: 3 / span 1; /* row 3 of 5*/
+    }
+
+    .grid-section .panel-4 {
+        grid-column: 1 / span 1;/*one column spanning one 412px and less*/
+        grid-row: 4 / span 1; /* row 4 of 5*/
+    }
+
+    .grid-section .panel-5 {
+        grid-column: 1 / span 1;/*one column spanning one 412px and less*/
+        grid-row: 5 / span 1; /* row 5 of 5*/
+    }
+}

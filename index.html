@@ -10,18 +10,32 @@
   
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
+ 
 </head>
 <body>
+
+  <!-- Approach below is to create a grid container class containing 
+  five panel classes. Within each panel will be a top-section class which 
+  leverages flexbox to style and position the photo, name and grad details.
+  Styling will be same for all panels except 3 and 5 which use the 
+  filter: brighteness() tool to darken the text against the white background-->
   <div class="grid-section">
+  <!--  This the grid container. Each panel will
+  make up the five sections of the grid.  -->
     <div class="panel-1">
-      <!-- <img src="images/bg-pattern-quotation.svg" id="quotes"> -->
+    <!-- the first panel  -->
       <div class="top-section">
-        <img src="images/image-daniel.jpg" alt="photo-daniel" id="portrait">
-        <div class="name">Daniel Clifford</div>
-        <div class="grad">Verified Graduate</div>
+      <!-- this leverages flexbox. Photo separated from name and 
+      grad details. All three given their own classs so as to allow
+      individual styling -->
+        <div class="photo">
+          <img src="images/image-daniel.jpg" alt="photo-daniel" id="portrait">
+        </div>
+        <div class="details">
+        <!-- To allow for positioning of name and grad details together -->
+          <div class="name">Daniel Clifford</div>
+          <div class="grad">Verified Graduate</div>
+        </div>
       </div>
       <div class="heading">I received a job offer mid-course, and the subjects I learned were current, if not more so, 
         in the company I joined. I honestly feel I got every penny’s worth.</div>
@@ -31,10 +45,15 @@
         The next 12 weeks was the best - and most grueling - time of my life. Since completing 
         the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</div>
     </div>
-    <div class="panel-2">
+    <div class="panel-2"> <!-- panels 2, 3, 4 and 5 same as panel-1 -->
       <div class="top-section">
-        <img src="images/image-jonathan.jpg" alt="photo-jonathan" id="portrait">
-        <div class="name-grad">Jonathan Walters<br><span>Verified Graduate</span></div>
+        <div class="photo">
+          <img src="images/image-jonathan.jpg" alt="photo-jonathan" id="portrait">
+        </div>
+        <div class="details">
+          <div class="name">Jonathan Walters</div>
+          <div class="grad">Verified Graduate</div>
+        </div>
       </div>
       <div class="heading">The team was very supportive and kept me motivated</div>
       <div class="text">“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
@@ -42,8 +61,13 @@
     </div>
     <div class="panel-3">
       <div class="top-section">
-        <img src="images/image-jeanette.jpg" alt="photo-jeanette" id="portrait">
-        <div class="name-grad">Jeanette Harmon<br><span>Verified Graduate</span></div>
+        <div class="photo">
+          <img src="images/image-jeanette.jpg" alt="photo-jeanette" id="portrait">
+        </div>
+        <div class="details">
+          <div class="name">Jeanette Hamon</div>
+          <div class="grad">Verified Graduate</div>
+        </div>
       </div>
       <div class="heading">An overall wonderful and rewarding experience</div>
       <div class="text">“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
@@ -51,8 +75,13 @@
     </div>
     <div class="panel-4">
       <div class="top-section">
-        <img src="images/image-patrick.jpg" alt="photo-patrick" id="portrait">
-        <div class="name-grad">Patrick Abrams<br><span>Verified Graduate</span></div>
+        <div class="photo">
+          <img src="images/image-patrick.jpg" alt="photo-patrick" id="portrait">
+        </div>
+        <div class="details">
+          <div class="name">Patrick Abrams</div>
+          <div class="grad">Verified Graduate</div>
+        </div>
       </div>
       <div class="heading">Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
         learning from their experiences was easy.</div>
@@ -63,8 +92,14 @@
     </div>
     <div class="panel-5">
       <div class="top-section">
-        <img src="images/image-kira.jpg" alt="photo-kira" id="portrait">
-        <div class="name-grad">Kira Whittle</div><br><span>Verified Graduate</span></div>
+        <div class="photo">
+          <img src="images/image-kira.jpg" alt="photo-kira" id="portrait">
+        </div>
+        <div class="details">
+          <div class="name">Kira Whittle</div>
+          <div class="grad">Verified Graduate</div>
+        </div>
+      </div>
       <div class="heading">Such a life-changing experience. Highly recommended!</div>
       <div class="text">“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
         professionals who can help me learn programming step by step. I was encouraged to enroll by a former 

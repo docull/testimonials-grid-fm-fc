@@ -1,9 +1,14 @@
+/* ------ GENERAL STYLES ------ */
+
+/* ------ General color and font styles for body ------- */
 body {
     background-color: hsl(210, 46%, 95%);
     font-family: "Barlow Semi Condensed";
     font-size: 13px;
+    color:hsl(0, 0%, 81%);
 }
 
+/* ------ Grid container based on 12 columns and two rows. ---- */
 .grid-section {
     width: 1000px;
     height: 400px;
@@ -13,138 +18,247 @@ body {
     gap: 20px;
 }
 
-#portrait {
-    border-radius: 100%;
-}
-
-.spacer5 {
-    height: 20px;
-}
-
+/*  top section of each panel using felxbox to position 
+and style photo and name/grad details  */
 .top-section {
     display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-#portrait {
-    top: 50%;
-    margin: 20px;
-}
+/* -------------- PANEL-1 -----------  */
 
+/*  first panel comprising 6 columns and one row  */
 .panel-1 {
     border-radius: 10px;
     background-color: hsl(263, 55%, 52%);
     background-image: url("images/bg-pattern-quotation.svg");
     background-repeat: no-repeat;
     background-position: right;
-    color: hsl(0, 0%, 81%);
-    grid-column: 1 / 7;
+    grid-column: 1 / 7; /* columns one up to and including six  */
     grid-row: 1 / span 1;
 }
 
-.panel-1 .name-grad {
+/* portrait reduced in size with border and margin  */
+.panel-1 #portrait {
+    width: 30%;
+    height: 30%;
+    border-radius: 100%;
+    border: solid 2px;
     margin-top: 20px;
+    margin-left: 20px;
 }
 
-.panel-1 .name-grad span {
+/* Allow for positioning of name and grad details together */
+.panel-1 .details {
+    margin-top: 12px;
+    margin-left: -5px;    
+    display: flex;
+    flex-direction: column;
+}
+
+/* Allow for styling of grad details  */
+.panel-1 .grad {
     opacity: 50%;
     font-size: .8rem;
 }
 
+/* styling of heading  */
 .panel-1 .heading {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    margin: 20px;
 }
 
+/* styling of review  */
 .panel-1 .text {
     opacity: 70%;
+    margin: 20px;
 }
+
+
+/* -------------- PANEL-2 -----------  */
 
 .panel-2 {
     border-radius: 10px;
     background-color: hsl(217, 19%, 35%);
-    color:hsl(0, 0%, 81%);
     grid-column: 7 / 10;
     grid-row: 1 / span;
 }
 
-.panel-2 .position {
+.panel-2 #portrait {
+    width: 30%;
+    height: 30%;
+    border-radius: 100%;
+    border: solid 2px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.panel-2 .details {
+    margin-top: 12px;
+    margin-left: -5px;    
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-2 .grad {
     opacity: 50%;
     font-size: .8rem;
 }
 
 .panel-2 .heading {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    margin: 20px;
 }
 
 .panel-2 .text {
     opacity: 70%;
+    margin: 20px;
 }
+
+
+/* -------------- PANEL-3 -----------  */
 
 .panel-3 {
     border-radius: 10px;
     background-color: hsl(0, 0%, 100%);
-    color:hsl(0, 0%, 81%);
     grid-column: 1 / 4;
     grid-row: 2 / span 1;
 }
 
-.panel-3 .position {
+.panel-3 #portrait {
+    width: 35%;
+    height: 35%;
+    border-radius: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.panel-3 .details {
+    margin-top: 12px;
+    margin-left: -5px;    
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-3 .name {
+    filter: brightness(50%);
+}
+
+.panel-3 .grad {
+    filter: brightness(50%);
     opacity: 50%;
     font-size: .8rem;
 }
 
 .panel-3 .heading {
-    font-size: 1.3rem;
+    filter: brightness(50%);
+    font-size: 1.2rem;
+    margin: 20px;
 }
 
 .panel-3 .text {
+    filter: brightness(50%);
     opacity: 70%;
+    margin: 20px;
 }
+
+
+/* -------------- PANEL-4 -----------  */
 
 .panel-4 {
     border-radius: 10px;
     background-color: hsl(219, 29%, 14%);
-    color:hsl(0, 0%, 81%);
     grid-column: 4 / 10;
     grid-row: 2 / span 1;
 }
 
-.panel-4 .position {
+.panel-4 #portrait {
+    width: 30%;
+    height: 30%;
+    border-radius: 100%;
+    border: solid hsl(263, 55%, 52%) 2px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.panel-4 .details {
+    margin-top: 12px;
+    margin-left: -5px;    
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-4 .grad {
     opacity: 50%;
     font-size: .8rem;
 }
 
 .panel-4 .heading {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    margin: 20px;
 }
 
 .panel-4 .text {
     opacity: 70%;
+    margin: 20px;
 }
 
 .panel-5 {
     border-radius: 10px;
     background-color: hsl(0, 0%, 100%);
-    color:hsl(0, 0%, 81%);
     grid-column: 10 / span 3;
     grid-row: 1 / span 2;
 }
 
-.panel-5 .position {
+
+/* -------------- PANEL-5 -----------  */
+
+.panel-5 #portrait {
+    width: 35%;
+    height: 35%;
+    border-radius: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.panel-5 .details {
+    margin-top: 12px;
+    margin-left: -5px;    
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-5 .name {
+    filter: brightness(50%);
+}
+
+.panel-5 .grad {
+    filter: brightness(50%);
     opacity: 50%;
     font-size: .8rem;
 }
 
 .panel-5 .heading {
-    font-size: 1.3rem;
+    filter: brightness(50%);
+    font-size: 1.2rem;
+    margin: 20px;
 }
 
 .panel-5 .text {
+    filter: brightness(50%);
     opacity: 70%;
+    margin: 20px;
 }
 
+
+/* -----------ATTRIBUTION SECTION-------------  */
+
 .attribution {
-    font-size: 11px; text-align: center;
+    font-size: 11px;
+    text-align: center;
 }
+
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
